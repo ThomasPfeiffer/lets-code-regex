@@ -1,0 +1,42 @@
+:csv: link:csv/employees.csv[employees.csv]
+:ts: link:typescript[the typescript directory]
+
+= Editor Find and Replace
+ Common IDEs support Regex when searching the contents of a file or the whole project. This directory contains exercises to practice find & replace using your IDE of choice. After completing an exercise, revert your changes and start the next. 
+
+ NOTE:: The csv does not contain escaped commas. All exercises require only a one find and replace operation.
+
+.Syntax Documentation
+- https://www.jetbrains.com/help/idea/regular-expressions.html#tips-tricks[Jetbrains IDEs]
+- https://learn.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio[VS Code]
+
+:sectnums:
+== Saving disk space
+Delete all empty lines in {csv}
+
+== Saving even more disk space
+Delete all lines in {csv} where the username is longer than 6 characters.
+
+== Enhancing Data
+Duplicate all lines in {csv}.
+
+== Removing comments
+Remove all comments in {ts}.
+
+== Renaming
+Rename `Employee` to `Lolli` in {ts}. This should include variable names, functions, interfaces and classes. The case should be preserved (doSomethingEmployee should become doSomethingLolli, not doSomethinglolli).
+
+== Renaming with negation
+Rename `Employee` to `Lolli` again, but this time keep `EmployeeImpl`
+
+== Removing with Backreference
+Some rows in {csv} have the roles Chief, CEO, Director or King mentioned twice. Delete them.
+
+== Replace with Backreference
+Instead of deleting the rows with duplicated roles, remove the duplicated mentioning of their role, e.g. `Chief of Stuff Chief` should become `Chief of Stuff`.
+
+== Professionall CSV Processing
+Add a column 'rank' to {csv} that contains the rank of an employee in case it is Chief, CEO, Director or King. The column should be empty otherwise. You may add the column header manually.
+
+
+
