@@ -1,5 +1,6 @@
 :csv: link:csv/employees.csv[employees.csv]
 :ts: link:typescript[the typescript directory]
+:jsx: link:jsx/App.jsx[App.jsx]
 
 = Editor Find and Replace
  Common IDEs support Regex when searching the contents of a file or the whole project. This directory contains exercises to practice find & replace using your IDE of choice. After completing an exercise, revert your changes and start the next. 
@@ -37,6 +38,11 @@ Instead of deleting the rows with duplicated roles, remove the duplicated mentio
 
 == Professionall CSV Processing
 Add a column 'rank' to {csv} that contains the rank of an employee in case it is Chief, CEO, Director or King. The column should be empty otherwise. You may add the column header manually.
+
+== JSX
+Make the MyComponent calls in {jsx} non self-closing and pass children as nested Tag, i.e. `<A children={<X />} />` should become `<A><X /></A>`
+
+Now, MyComponent is always called with the same Prop values. Declare the values once (in Javascript Syntax) and reuse them. You may use manual edits here.
 
 
 
